@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THAIPLAY365 - Trusted Online Casino Thailand</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #003087, #c8102e);
+            color: white;
+            text-align: center;
+        }
+        
+        @keyframes logoFloat {
+            0%, 100% { transform: translateY(0px) rotateZ(0deg); }
+            50% { transform: translateY(-15px) rotateZ(3deg); }
+        }
+        @keyframes logoGlow {
+            0%, 100% { filter: drop-shadow(0 0 10px gold); }
+            50% { filter: drop-shadow(0 0 25px gold) drop-shadow(0 0 40px rgba(255,215,0,0.6)); }
+        }
+        @keyframes slideInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 15px rgba(255,215,0,0.5); }
+            50% { box-shadow: 0 0 30px rgba(255,215,0,0.8); }
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url('./public/hero-bg.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .logo {
+            max-width: 420px;
+            margin-bottom: 20px;
+            animation: logoFloat 4s ease-in-out infinite, logoGlow 3s ease-in-out infinite;
+        }
+        h1 {
+            font-size: 4rem;
+            margin: 15px 0;
+            text-shadow: 0 0 25px gold;
+            animation: slideInDown 0.8s ease-out;
+        }
+        h2 { 
+            font-size: 2.2rem; 
+            color: #ffd700; 
+            margin-bottom: 25px;
+            animation: slideInDown 1s ease-out 0.2s both;
+        }
+        
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 18px 55px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-register {
+            background: linear-gradient(135deg, #ffd700, #ffaa00);
+            color: #003087;
+            box-shadow: 0 8px 20px rgba(255,215,0,0.3);
+        }
+        .btn-register:hover {
+            transform: scale(1.1) translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255,215,0,0.6);
+        }
+        .btn-login {
+            background: #fff;
+            color: #003087;
+            box-shadow: 0 8px 20px rgba(255,255,255,0.2);
+        }
+        .btn-login:hover {
+            transform: scale(1.1) translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255,255,255,0.4);
+            background: #f0f0f0;
+        }
+        
+        .bonus-box {
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            border: 3px solid #ffd700;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 850px;
+            animation: fadeInUp 0.8s ease-out 0.6s both, pulse 2s ease-in-out infinite;
+        }
+        .bonus-box h2 {
+            animation: none;
+        }
+        
+        .games {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            padding: 60px 20px;
+            background: linear-gradient(180deg, rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+            animation: fadeInUp 1s ease-out 0.8s both;
+        }
+        
+        .game-card {
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            padding: 25px 15px;
+            border-radius: 15px;
+            border: 2px solid #ffd700;
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.6s ease-out;
+            animation-fill-mode: both;
+        }
+        .game-card:nth-child(1) { animation-delay: 0.8s; }
+        .game-card:nth-child(2) { animation-delay: 1s; }
+        .game-card:nth-child(3) { animation-delay: 1.2s; }
+        .game-card:nth-child(4) { animation-delay: 1.4s; }
+        
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(255,215,0,0.3);
+            background: rgba(255,255,255,0.15);
+            border-color: #ffaa00;
+        }
+        
+        img { border-radius: 15px; margin: 15px 0; max-width: 100%; }
+        footer { 
+            background: #000; 
+            padding: 40px 20px;
+            animation: fadeInUp 1s ease-out 1.6s both;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <img src="./public/logo.webp" alt="ThaiPlay365 Logo" class="logo">
+            <h1>TRUSTED ONLINE CASINO</h1>
+            <h2>THAILAND'S FAVORITE GAMING DESTINATION</h2>
+            
+            <div class="btn-container">
+                <a href="https://thaiplay365.com/" class="btn btn-register" target="_blank">REGISTER NOW</a>
+                <a href="https://thaiplay365.com/" class="btn btn-login" target="_blank">LOGIN</a>
+            </div>
+
+            <div class="bonus-box">
+                <h2>🎁 150% WELCOME BONUS</h2>
+                <h3 style="color:#ffd700; font-size:2rem;">UP TO 5,000 THB</h3>
+                <p>+ 1,000 THB Slot Bonus + Daily Rewards</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMAGES SECTION -->
+    <div class="container">
+        <img src="./public/casino.jpg" alt="ThaiPlay365 Casino" style="max-width:95%;">
+        <img src="./public/welcome-bonus.jpg" alt="Welcome Bonus" style="max-width:95%;">
+        <img src="./public/games-collection.jpg" alt="Games Collection" style="max-width:95%;">
+    </div>
+
+    <!-- GAMES -->
+    <section class="games">
+        <div class="game-card">
+            <h3>⚽ SPORTS BETTING</h3>
+            <p>Football • Basketball • eSports<br>Best Odds in Thailand</p>
+        </div>
+        <div class="game-card">
+            <h3>🃏 LIVE CASINO</h3>
+            <p>Evolution • Pragmatic Live<br>Sexy Baccarat • Dealer Games</p>
+        </div>
+        <div class="game-card">
+            <h3>🎰 SLOT GAMES</h3>
+            <p>JILI • Pragmatic Play • Joker<br>Thousands of Hot Slots</p>
+        </div>
+        <div class="game-card">
+            <h3>🐔 COCKFIGHT & FISHING</h3>
+            <p>SV388 Live Cockfight<br>3D Fishing Games</p>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>THAIPLAY365 © 2026</strong> — Licensed & Secure Platform</p>
+        <p>24/7 Live Support | Fast Deposit & Withdrawal | 18+ Only</p>
+    </footer>
+
+</body>
+</html>
